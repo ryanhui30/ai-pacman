@@ -1,46 +1,69 @@
-## Pacman
+# 🎮 AI Pacman Model
 
-A modified version of the Pacman educational project from the [Berkeley AI Lab](http://ai.berkeley.edu/project_overview.html).
+![Python](https://img.shields.io/badge/Python-3.5+-blue?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![CI](https://img.shields.io/badge/CI-passing-brightgreen)
 
-Some improvements from the original project:
- - Upgraded to Python 3.
- - Organized into packages.
- - Brought up to a common style.
- - Added logging.
- - Added tests.
- - Fixed several bugs.
- - Generalized and reorganized several project elements.
- - Replaced the graphics systems.
- - Added the ability to generate gifs from any pacman or capture game.
+An advanced Pacman implementation with AI capabilities, adapted from Berkeley's AI Lab project with significant improvements.
 
-### FAQ
+## 🚀 Features
 
-**Q:** What version of Python does this project support?  
-**A:** Python >= 3.5.
-The original version of this project was written for Python 2, but it has since been updated.
+- **Modernized Codebase**:
+  - Upgraded to Python 3.5+
+  - Organized into modular packages
+  - Comprehensive logging system
+  - Automated tests
 
-**Q:** What dependencies do I need for this project?  
-**A:** This project has very limited dependencies.
-The pure Python dependencies can be installed via pip and are all listed in the requirements file.
-These can be installed via: `pip3 install --user -r requirements.txt`.
-To use a GUI, you also need `Tk` installed.
-The process for installing Tk differs depending on your OS, instructions can be found [here](https://tkdocs.com/tutorial/install.html).
+- **Enhanced AI Capabilities**:
+  - Multiple agent implementations
+  - Pathfinding algorithms
+  - Decision-making strategies
+  - Tournament-ready infrastructure
 
-**Q:** How do I run this project?  
-**A:** All the binary/executables for this project are located in the `pacai.bin` package.
-You can invoke them from this repository's root directory (where this file is located) using a command like:
-```
-python3 -m pacai.bin.pacman
-```
+- **Visual Improvements**:
+  - New graphics system
+  - GIF generation from gameplay
+  - Customizable display options
 
-### Acknowledgements
+## 📦 Installation
 
-This project has been built up from the work of many people.
-Here are just a few that we know about:
- - The Berkley AI Lab for starting this project. Primarily John Denero and Dan Klein.
- - Barak Michener for providing the original graphics and debugging help.
- - Ed Karuna for providing the original graphics and debugging help.
- - Jeremy Cowles for implementing an initial tournament infrastructure.
- - LiveWires for providing some code from a Pacman implementation (used / modified with permission).
- - The LINQS lab from UCSC.
- - Graduates of the CMPS 140 class who have helped pave the way for future classes (their identities are immortalized in the git history).
+1. Clone the repository:
+  ```bash
+   git clone https://github.com/ryanhui30/ai-pacman.git
+   cd ai-pacman
+  ```
+
+2. Install dependencies:
+ ```bash
+ pip install -r requirements.txt
+ ```
+
+3. Install Tkinter for GUI:
+- Linux: sudo apt-get install python3-tk
+- Mac: brew install python-tk
+- Windows: Comes pre-installed with Python
+
+🕹️ Usage
+Run the main game:
+
+ ```bash
+ python -m pacai.bin.pacman
+ ```
+
+Available modules:
+ ```bash
+ # Run specific AI agents
+ python -m pacai.bin.pacman --agent=YourAgent
+
+ # Generate gameplay GIFs
+ python -m pacai.bin.replay --output=gameplay.gif
+ ```
+
+🧠 AI Components
+- Pathfinding: A* and Dijkstra implementations
+- Decision: Making	Minimax with alpha-beta pruning
+- Ghost AI: Various chasing/evading strategies
+- Utility Systems: Scoring and state evaluation
+
+Need Help?
+📩 Contact: ryanhui30@gmail.com
